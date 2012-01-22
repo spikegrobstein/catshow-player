@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.summary     = "Video player component of Catshow"
   s.description = "Play video and interact with video players for Catshow."
 
-  s.rubyforge_project = "catshow-player"
+  s.add_dependency 'cocaine'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
