@@ -42,8 +42,8 @@ module Catshow
       
       class << self
         
-        def play(video_path)
-          cmd = Cocaine::CommandLine.new("open", "-a :vlc :video --args --extraint rc --rc-host 0.0.0.0:3456", :video => video_path, :vlc => @@vlc_path)
+        def open(video_path)
+          cmd = Cocaine::CommandLine.new("open", "-a :vlc :video --args --extraint rc --rc-host 0.0.0.0:3456 --fullscreen", :video => video_path, :vlc => @@vlc_path)
           
           cmd.run
         end
