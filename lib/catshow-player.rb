@@ -1,5 +1,5 @@
 require "catshow-player/version"
-require "catshow-player/player"
+require "catshow-player/base"
 require "catshow-player/vlc"
 
 
